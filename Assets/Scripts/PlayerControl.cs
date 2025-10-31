@@ -1,10 +1,11 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Hareket Ayarları")]
     public float moveSpeed = 5f;
-    public float aimSpeed = 2.5f; // aim modunda yavaşlama
+    public float aimSpeed = 2.5f; // Aim modunda yavaşlama
     private Vector3 moveDirection;
 
     [Header("Roll Ayarları")]
@@ -40,38 +41,49 @@ public class PlayerController : MonoBehaviour
     }
 
     void HandleInput()
+{
+    float h = Input.GetAxisRaw("Horizontal");
+    float v = Input.GetAxisRaw("Vertical");
+    moveDirection = new Vector3(h, 0f, v).normalized;
+
+    if (Input.GetKeyDown(KeyCode.Space) && !isRolling)
+        StartCoroutine(Roll());
+
+    // Karakter yönü (aim modunda dönmez)
+    if (moveDirection.magnitude > 0 && !isAiming)
     {
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
-        moveDirection = new Vector3(h, 0f, v).normalized;
-
-        if (Input.GetKeyDown(KeyCode.Space) && !isRolling)
-            StartCoroutine(Roll());
-
-        if (moveDirection.magnitude > 0 && !isAiming)
-            transform.forward = moveDirection;
+        // Eski: transform.forward = moveDirection;
+        // Yeni: daha yumuşak dönüş
+        Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
     }
+}
+
 
     void Move()
     {
         float currentSpeed = isAiming ? aimSpeed : moveSpeed;
+
+        // Doğru hız uygulaması — sadece 1 kez Time.fixedDeltaTime kullanılmalı!
         Vector3 move = moveDirection * currentSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + move);
 
+        // Animator parametresi
         anim.SetFloat("Speed", moveDirection.magnitude);
     }
 
-    System.Collections.IEnumerator Roll()
+    IEnumerator Roll()
     {
         isRolling = true;
         canMove = false;
 
         anim.SetTrigger("Roll");
-        float timer = 0f;
 
+        float timer = 0f;
         Vector3 rollDir = moveDirection;
+
         if (rollDir == Vector3.zero)
-            rollDir = transform.forward; // boştayken yönüne göre roll atar
+            rollDir = transform.forward; // Boştayken ileri doğru roll atar
 
         while (timer < rollDuration)
         {
