@@ -2,28 +2,24 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float lifeTime = 2f;   // Merminin sahnede kalma süresi
-    public int damage = 10;       // Vereceği hasar
+    public float lifetime = 3f;
+    public float damage = 25f;
 
     private void Start()
     {
-        // Belirli süre sonra yok olsun
-        Destroy(gameObject, lifeTime);
+        Destroy(gameObject, lifetime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        // Eğer Enemy tag'lı objeye çarparsa
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy"))
         {
-            EnemyHealth enemy = collision.gameObject.GetComponent<EnemyHealth>();
+            Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null)
-            {
                 enemy.TakeDamage(damage);
-            }
         }
 
-        // Çarptıktan sonra yok ol
-        Destroy(gameObject);
+        if (!other.CompareTag("Player"))
+            Destroy(gameObject);
     }
 }
