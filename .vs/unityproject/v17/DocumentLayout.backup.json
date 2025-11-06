@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\unityproject\\unityproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{300DCB08-272A-9B19-87AF-97BDD267BB90}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\unityproject\\unityproject\\assets\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{300DCB08-272A-9B19-87AF-97BDD267BB90}|Assembly-CSharp.csproj|solutionrelative:assets\\enemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{300DCB08-272A-9B19-87AF-97BDD267BB90}|Assembly-CSharp.csproj|c:\\users\\user\\desktop\\unityproject\\unityproject\\assets\\enemymove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{300DCB08-272A-9B19-87AF-97BDD267BB90}|Assembly-CSharp.csproj|solutionrelative:assets\\enemymove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B17DF4F-0A9C-B857-D8C5-FAE4052C48A6}|Assembly-CSharp-Editor.csproj|C:\\Users\\USER\\Desktop\\unityproject\\unityproject\\assets\\editor\\mountainplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B17DF4F-0A9C-B857-D8C5-FAE4052C48A6}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\mountainplacer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyAI.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\unityproject\\unityproject\\Assets\\EnemyAI.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemyAI.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\unityproject\\unityproject\\Assets\\EnemyAI.cs",
+              "RelativeToolTip": "Assets\\EnemyAI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T12:33:37.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyMove.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\unityproject\\unityproject\\Assets\\EnemyMove.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemyMove.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\unityproject\\unityproject\\Assets\\EnemyMove.cs",
+              "RelativeToolTip": "Assets\\EnemyMove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T12:29:04.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MountainPlacer.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\unityproject\\unityproject\\Assets\\Editor\\MountainPlacer.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\MountainPlacer.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\unityproject\\unityproject\\Assets\\Editor\\MountainPlacer.cs",
+              "RelativeToolTip": "Assets\\Editor\\MountainPlacer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T17:25:18.946Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
