@@ -113,11 +113,11 @@ Saldırı mesafesinde → State = Attack
 | **Attack (Saldırı)** | Oyuncu yakın mesafedeyse saldırı animasyonu oynatır. |
 
 ### 4.3 Blok Diyagramı
-![Diyagram].(diyagram.jpg)
+![Diyagram](diyagram.jpg)
 
 
 ### 4.4 Sistem Şeması
-![Sema].(sema.jpg)
+![Sema](sema.jpg)
 
 ---
 
