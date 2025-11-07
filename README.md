@@ -134,20 +134,35 @@ Saldırı mesafesinde → State = Attack
 
 ## 📂 6. Proje Dosya Yapısı
 Assets/
+
 ├── Crates And Barrels Pack.../
+
 ├── NewPunch/
+
 ├── Prefabs/
+
 ├── Pure Poly/
+
 ├── Scenes/
+
 │ ├── MainMenu
+
 │ ├── GameScene
+
 │ └── GameOver
+
 ├── SciFiWarriorPBRHPPolyard/
+
 ├── Scripts/
+
 │ ├── EnemyAI.cs
+
 │ ├── Playermove.cs
+
 │ └── PlayerAnimator.controller
+
 ├── Settings/
+
 └── Tree_Textures/
 
 ---
