@@ -119,20 +119,9 @@ Saldırı mesafesinde → State = Attack
 ### 4.4 Sistem Şeması
 ![Sema](sema.jpg)
 
----
 
-## 🧱 5. Tasarlanan Sahneler ve Arayüz
 
-| Sahne | Açıklama |
-|--------|-----------|
-| **MainMenu** | "Oyunu Başlat" ve "Çıkış" butonlarını içeren giriş ekranı. |
-| **GameScene** | Low-poly orman arazisi, Player (PBR-7) ve Enemy (Zombie) prefab’ları. |
-| **HUD (UI)** | Can barı, mermi bilgisi, arayüz göstergeleri. |
-| **GameOver** | “Oyun Bitti” ekranı, “Yeniden Başla” ve “Ana Menüye Dön” butonları. |
-
----
-
-## 📂 6. Proje Dosya Yapısı
+## 📂 5. Proje Dosya Yapısı
 ```
 Assets/
 ├── Crates And Barrels Pack.../
@@ -154,7 +143,7 @@ Assets/
 
 ---
 
-## ✅ 7. İsterler ve Kapsam Yönetimi
+## ✅ 6. İsterler ve Kapsam Yönetimi
 
 Proje boyunca odaklanılan temel isterler:
 - TPS Mekaniği  
@@ -165,7 +154,7 @@ Ekstra özellik eklemek yerine mevcut sistemlerin **kararlı ve hatasız** çal�
 
 ---
 
-## ⚠️ 8. Karşılaşılan Zorluklar ve Çözümler
+## ⚠️ 7. Karşılaşılan Zorluklar ve Çözümler
 
 ### 🧱 GitHub Prefab Çakışmaları
 **Sorun:** Branch geçişlerinde prefab bozulmaları  
@@ -181,7 +170,7 @@ Ekstra özellik eklemek yerine mevcut sistemlerin **kararlı ve hatasız** çal�
 
 ---
 
-## 🧠 9. Projenin Katkıları (Kazanımlar)
+## 🧠 8. Projenin Katkıları (Kazanımlar)
 
 - **Yapay Zeka Temelleri:** FSM yapısını oyun motorunda sıfırdan tasarlama.  
 - **Unity Yetkinliği:** NavMesh, Raycasting, Animator, Controller kullanımı.  
