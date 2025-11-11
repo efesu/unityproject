@@ -140,10 +140,10 @@ Assets/
 │   ├── Player.prefab
 │   ├── Enemy.prefab
 │   ├── Bullet.prefab
-│   └── (Oluşturduğunuz diğer prefablar)
+│   └── ...
 │
 ├── Materials/
-│   └── (Karakterler ve çevre için kendi materyalleriniz)
+│   └── ...
 │
 └── Animations/
     └── PlayerAnimator.controller
