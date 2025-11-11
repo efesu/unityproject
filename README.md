@@ -60,7 +60,7 @@ Düşman davranışları için **Finite State Machine (FSM)** modeli kullanılm�
 ### Yazılımsal Mimari
 Unity’nin **Component-Based Architecture** yapısı esas alınmıştır.  
 Her GameObject, kendi davranışlarını yöneten ayrı bir C# script ile kontrol edilir:
-- `Playermove.cs`
+- `Playercontrol.cs`
 - `EnemyAI.cs`
 
 ### Yapay Zeka (FSM)
