@@ -53,9 +53,6 @@ Oyuncu:
 ### Yapay Zeka (FSM)
 Düşman davranışları için **Finite State Machine (FSM)** modeli kullanılmıştır.  
 “Left 4 Dead” oyunundaki sürü (horde) zekasından ilham alınmış, ancak her düşman **bireysel** FSM mantığıyla hareket etmektedir:  
-- Oyuncuyu algılama (Chase)  
-- Rotada gezinme (Patrol)  
-
 ---
 
 ## ⚙️ 3. Kullanılan Mimariler, Yöntemler ve Teknikler
@@ -97,7 +94,6 @@ Hayır → Mermi izi veya vurma efekti
 #### 🧠 Yapay Zeka (FSM)
 CheckDistanceToPlayer():
 
-Görüş mesafesi dışında → State = Patrol
 Görüş mesafesinde → State = Chase
 Saldırı mesafesinde → State = Attack
 
@@ -108,7 +104,6 @@ Saldırı mesafesinde → State = Attack
 | Durum | Açıklama |
 |--------|-----------|
 | **Idle (Boşta)** | Hedef yoksa kısa süre bekler, Idle animasyonu oynatır. |
-| **Patrol (Devriye)** | Önceden belirlenen waypoints arasında dolaşır. |
 | **Chase (Kovalama)** | Oyuncu görüş alanına girince kovalamaya başlar. |
 | **Attack (Saldırı)** | Oyuncu yakın mesafedeyse saldırı animasyonu oynatır. |
 
