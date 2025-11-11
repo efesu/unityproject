@@ -119,21 +119,34 @@ Saldırı mesafesinde → State = Attack
 ## 📂 5. Proje Dosya Yapısı
 ```
 Assets/
-├── Crates And Barrels Pack.../
-├── NewPunch/
-├── Prefabs/
-├── Pure Poly/
 ├── Scenes/
-│   ├── MainMenu
-│   ├── GameScene
-│   └── GameOver
-├── SciFiWarriorPBRHPPolyard/
+│   ├── MainMenu.unity
+│   ├── GameScene.unity
+│   └── GameOver.unity
+│
 ├── Scripts/
-│   ├── EnemyAI.cs
-│   ├── Playermove.cs
-│   └── PlayerAnimator.controller
-├── Settings/
-└── Tree_Textures/
+│   ├── Bullet.cs
+│   ├── CameraFollow.cs
+│   ├── Enemy.cs
+│   ├── EnemyHealth.cs
+│   ├── IsometricCameraFollow.cs
+│   ├── PlayerControl.cs
+│   ├── PlayerHealth.cs
+│   ├── UIManager.cs
+│   ├── WaveSpawner.cs
+│   └── WeaponControl.cs
+│
+├── Prefabs/
+│   ├── Player.prefab
+│   ├── Enemy.prefab
+│   ├── Bullet.prefab
+│   └── (Oluşturduğunuz diğer prefablar)
+│
+├── Materials/
+│   └── (Karakterler ve çevre için kendi materyalleriniz)
+│
+└── Animations/
+    └── PlayerAnimator.controller
 ```
 
 ---
